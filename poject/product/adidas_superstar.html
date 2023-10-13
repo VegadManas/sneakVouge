@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--BOXicon-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+     <!--FOR THE FONTS-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Russo+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+    font-family: iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 70%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #5B0888;
+
+
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #5B0888;
+    font-weight: 500;
+    font-family: 'Black Ops One', cursive;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    color: #5B0888;
+    margin: 0 2rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+header .navbar a:hover {
+    color: black;
+    background: #6807f0;
+    transition: .4s;
+    border: 1px solid #f7f7f7;
+    border-radius: 2px;
+}
+
+header .icons a {
+    font-size: 2rem;
+    color: #5B0888;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: black;
+}
+
+#menu-bar {
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    color: #5B0888;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:768px) {
+    #menu-bar {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 70%;
+        background: transparent;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        opacity: 1;
+        border-bottom-right-radius: 20px;
+    }
+
+    header .navbar a {
+        font-size: 2rem;
+        padding: 2rem;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    header .navbar.active {
+        left: 0;
+        background-color: white;
+        transition: .9s;
+    }
+}
+
+/**home*/
+    .product
+    {
+        display: flex;
+    }
+    .imgs
+    {
+        width: 70%;
+        height: 100vh;
+        margin-top: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .imgs img
+    {
+        width: 30rem;
+        height: 30rem;
+    }
+    .info
+    {
+        width: 29%;
+        height: 100vh;
+        margin-top: 10rem;
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="bx bx-menu"></div>
+        <a href="#" class="logo">SNEAK VOGUE</a>
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="#product">Product</a>
+            <a href="#fearured">about as</a>
+            <a href="#blog">blog</a>
+        </nav>
+        <div class="icons">
+            <a href="login/login.html"><i class='bx bxs-log-in'></i></a>
+            <a href="#"><i class="bx bxs-cart"></i></a>
+        </div>
+
+    </header>
+
+
+    <section>
+        <div class="product">
+            <div class="imgs">
+                <img src="IMG/adidas.1..PNG" alt="">
+                <img src="IMG/adidas2PNG.PNG" alt="">
+                <img src="IMG/adidas3.PNG" alt="">
+                <img src="IMG/adidas4.PNG" alt="">
+                <img src="IMG/adidas5.PNG" alt="">
+                <img src="IMG/adidas6.PNG" alt="">
+            </div>
+            <div class="info">
+                <h1>SUPERSTAR SHOES</h1>
+                <p>MRP in Indian currency:</p>
+                <p> <b>RS 7000</b> per pair</p>
+                <p>(Inclusive of all taxes)</p>
+            </div>
+        </div>
+    </section>
+
+    <SCript>
+    
+    let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.onclick =() =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        </SCript>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--BOXicon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+     <!--FOR THE FONTS-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Russo+One&display=swap" rel="stylesheet">
+
+    <title>MkV sneaks </title>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="bx bx-menu"></div>
+        <a href="#" class="logo">SNEAK VOGUE</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#product">Product</a>
+            <a href="#fearured">about as</a>
+            <a href="#blog">blog</a>
+        </nav>
+        <div class="icons">
+            <a href="login/login.html"><i class='bx bxs-log-in'></i></a>
+            <a href="#"><i class="bx bxs-cart"></i></a>
+        </div>
+
+    </header>
+
+    <!--
+        HOME 
+    -->
+    <section class="home" id="home">
+        <div class="slide-container active">
+       <div class="slide" id="offwhite">
+           <div class="image">
+               <img src="img/sneks/OffWhite.png" class="shoe">
+           </div>
+                <div class="content">
+                    <span>Nike</span>
+                    <h3>jordan 1 offwhite retro</h3>
+                    <h3>R 237000</h3>
+                    <a href="#" class="btn"><i class='bx bxs-cart-add bx-flip-horizontal bx-tada' ></i> add to card</a>
+                </div>
+            </div>       
+        </div>
+        <div class="slide-container">
+            <div class="slide"id="Matcontrol2">
+                <div class="image">
+                    <img src="img/sneks/Matcontrol2.png" class="shoe">
+                </div>
+                <div class="content" >
+                    <span>ASICS</span>
+                    <h3>Matcontrol 2 BLACK/gold</h3>
+                    <h3>R 4000</h3>
+                    <a href="#" class="btn"><i class='bx bxs-cart-add bx-flip-horizontal bx-tada' ></i> add to card</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="slide-container">
+            <div class="slide" id="pumar">
+                <div class="image">
+                    <img src="img/sneks/pumaRebound.png" class="shoe" id="pumasize">
+                </div>
+                <div class="content">
+                    <span>Puma</span>
+                    <h3>puma Rebound</h3>
+                    <h3>R 4000</h3>
+                    
+                    <a href="#" class="btn"><i class='bx bxs-cart-add bx-flip-horizontal bx-tada' ></i> add to card</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide-container">
+            <div class="slide" id="adidas">
+                <div class="image">
+                    <img src="img/sneks/adidas.png" class="shoe">
+                </div>
+                <div class="content">
+                    <span>Adidas</span>
+                    <h3>FORUM high</h3>
+                    <h3>R 11000</h3>
+                    
+                    <a href="#" class="btn"><i class='bx bxs-cart-add bx-flip-horizontal bx-tada' ></i> add to card</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="prev" class="bx bx-left" onclick="prev();"><i class='bx bxs-left-arrow' ></i></div>
+        <div id="next" class="fa fa-angle-right" onclick="next();"><i class='bx bxs-right-arrow' ></i></div>
+    </section>
+    
+     <!--PRODUCTS-->   
+
+    <section class="Product" id="product">
+    <center><h1><span>P</span>RODUCTS</h1></center>
+    <h1 class="product_name"><span>NIKE</span></h2>
+    <div class="nike_product">
+           <div class="p_card">
+            <img src="img/product/Nike_Blazer_Mid__77_Vintage.png" alt="Shoe Image">
+            <h2>Nike Blazer Mid'77 Vintage</h2>
+            <h3>Rs.7995</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        
+        <div class="p_card">
+            <img src="img/product/Air_Jordan_Legacy_312_Low.png" alt="Shoe Image">
+            <h2>Air Jordan Legacy 312 Low</h2>
+            <h3>Rs.12995</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/Nike_Air_Force_1.png" alt="Shoe Image">
+            <h2>Nike Air Force 1</h2>
+            <h3>Rs.7000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/Air_Jordan_6_Retro.png" alt="Shoe Image">
+            <h2>Air Jordan 6 Retro</h2>
+            <h3>Rs.18000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/Nike_Air_Force_1__07_Mid.png" alt="Shoe Image">
+            <h2>Nike Air Force 1 '07 Mid</h2>
+            <h3>Rs.10000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+    </div>
+    
+    
+    <h1 class="product_name"><span>ADIDAS</span></h2>
+    <div class="nike_product">
+           <div class="p_card">
+            <img src="img/product/NMD_R1.PNG" alt="Shoe Image">
+            <h2>NMD_R1</h2>
+            <h3>Rs.14000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        
+        <div class="p_card">
+            <img src="img/product/FORUM MID.PNG" alt="Shoe Image">
+            <h2>FORUM MID</h2>
+            <h3>Rs.20000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/SUPERSTAR.PNG" alt="Shoe Image">
+            <h2>SUPERSTAR</h2>
+            <h3>Rs.7000</h3>
+            <button class="add-to-cart-button"><a href="product/adidas_superstar.html" class="plink">MORE</a></button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/LITE RACER 3.0.PNG" alt="Shoe Image">
+            <h2>LITE RACER 3.0</h2>
+            <h3>Rs.2000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/NIZZA HIGH RF.PNG" alt="Shoe Image">
+            <h2>NIZZA HIGH RF</h2>
+            <h3>Rs.5000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+    </div>
+    <h1 class="product_name"><span>PUMA</span></h2>
+    <div class="nike_product">
+           <div class="p_card">
+            <img src="img/product/R78 Unisex.PNG" alt="Shoe Image">
+            <h2>R78 Unisex</h2>
+            <h3>Rs.4000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        
+        <div class="p_card">
+            <img src="img/product/PUMA Backcourt Mid.PNG" alt="Shoe Image">
+            <h2>PUMA Backcourt Mid</h2>
+            <h3>Rs.3500</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/Puma 1948 Mid.PNG" alt="Shoe Image">
+            <h2>Puma 1948 Mid</h2>
+            <h3>Rs.4000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/Mayze Leather.PNG" alt="Shoe Image">
+            <h2>Mayze Leather</h2>
+            <h3>Rs.8000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+        <div class="p_card">
+            <img src="img/product/Rebound Lay Up.PNG" alt="Shoe Image">
+            <h2>Rebound Lay Up</h2>
+            <h3>Rs.5000</h3>
+            <button class="add-to-cart-button">MORE</button>
+        </div>
+    </div>
+
+
+    </section>
+
+<!--BLOG-->
+<section>
+    <center><h1 id="blog">B<span>LOGS</span></h1></center>
+    <div class="feedback">
+        <div class="feed">
+            <div class="slide-feedback active">
+                <div class="fb">
+                    <img src="img/icon/quote-alt-left-solid-60.png"  id="quote"alt="">
+                    
+                    <p>These are the best sneaker that one acquires,
+                        also they are always withthe latest new and trends,
+                  </p>
+
+                    <b class="B">March 27.2021</b>
+
+                    <div class="proflie">
+                        <img src="img/profile/manasvegad.jpeg" alt="">
+                       
+                        <h4>
+                            Manas Vegad <br>
+                            <span id="span">CEO</span>
+                            
+                        </h4>
+                       
+                    </div>
+
+                    <div class="btun_feed">
+                      <div id="prev_feed" class="feed-left" onclick="prevf();"><i class='bx bx-left-arrow-alt'></i></div>
+                      <div id="next_feed" class="feed-right" onclick="nextf();"><i class='bx bx-right-arrow-alt'></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-feedback">
+                <div class="fb">
+                    <img src="/img/icon/quote-alt-left-solid-60.png" id="quote" alt="">
+                    
+                    <p>These are the best sneaker that one acquires,
+                        also they are always withthe latest new and trends,
+                        </p>
+
+                    <b class="B">March 27.2021</b>
+
+                    <div class="proflie">
+                        <img src="img/profile/varunjadav.jpeg" alt="">
+                       
+                        <h4>
+                            varun jadav<br>
+                            <span>CEO</span>
+                            
+                        </h4>
+                       
+                    </div>
+                    <div class="btun_feed">
+                      <div id="prev_feed" class="feed-left" onclick="prev();"><i class='bx bx-left-arrow-alt'></i></div>
+                      <div id="next_feed" class="feed-right" onclick="next();"><i class='bx bx-right-arrow-alt'></i></div>
+                    </div>
+                </div>   
+            </div>
+
+        </div>
+
+
+        <div class="img" id="imgbox">
+            <div class="box">
+                <img src="img/imgs/PUMA CA Pro sneakers in white with light gray detail.jfif" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+    <section class="news" id="news">
+        <div class="content">
+            <h3>monthly news letter</h3>
+            <p>
+                FOR THE NEW ARRIVALS AND AMAZING DEAL 
+            </p>
+            <form action="">
+                <input type="email" placeholder="please enter your email" class="email">
+            </form>
+            <input type="submit" value="save" class="btn2">
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html> 

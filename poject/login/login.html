@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="img2">
+        <img src="img/sneaker_img2.jpg" alt="">
+    </div>
+    <div class="login-container">
+        
+        <div class="form-container" id="login-form">
+            
+            <h1>Login</h1>
+            
+            <form action="login_process.php" method="POST">
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                
+                <button type="submit" class="login-button">Login</button>
+                <button class="signin-button" onclick="showSignup()">Sign Up</button>
+            </form>
+        </div>
+        
+        <!--     sign UP Container  -->
+        <div class="form-container hidden" id="signup-form">
+            <h1>Sign Up</h1>
+            <form action="signup_process.php" method="POST">
+                <div class="input-container">
+                    <input type="text" id="signup-username" name="username" placeholder="Username" required>
+                </div>
+                
+                <div class="input-container">
+                    <input type="email" id="signup-email" name="email" placeholder="Email" required>
+                </div>
+                
+                <div class="input-container">
+                    <input type="password" id="signup-password" name="password" placeholder="Password" required>
+                </div>
+                
+                <button type="submit" class="signup-button">Sign Up</button>
+                <button class="signin-button" onclick="showLogin()">Log in</button>
+            </form>
+        </div>
+    </div>
+    <div class="img1">
+    <img src="img/sneaker_img1.jpg" alt="">
+</div>
+
+
+<script src="login.js"></script>
+</body>
+
+</html>

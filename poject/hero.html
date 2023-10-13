@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Document</title>
+
+    <STYle>
+    body
+    {
+        background-color: rgb(255, 205, 236);
+    }
+    .feedback
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        height: 100vh;
+    }
+
+    .feedback .feed
+    {
+       
+        width: 45%;
+        height: 80vh;
+    }
+    .feedback .img
+    {
+ 
+        width: 45%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .feedback .img .box
+    {
+        background-color: rgb(188, 71, 231);
+        width: 60%;
+        height: 50vh;
+    }
+    .feedback .img .box img
+    {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        top: 4rem;
+        right: 4rem;    
+    }
+    .slide-feedback .fb 
+    {
+        animation: slide_fp .3s linear .1s;
+    }
+    .fb #quote
+    {
+        transform: scaleX(-1);
+        background-color: blueviolet;
+        width: 3rem;
+        height: 3rem;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        
+    }
+    .fb p
+    {
+        font-size: 1.5rem;
+        padding: 0 5rem;
+        
+        color: rgb(190, 126, 250);
+    }
+    @keyframes slide_fp
+    {
+        0%
+        {
+            opacity: 0;
+            transform: translateX(10rem);
+        }
+    }
+    .fb B
+    {
+        font-size: 1.7rem;
+        padding-left:5rem ;
+        color: rgb(132, 0, 255);
+        
+    }
+    .fb .proflie 
+    {
+        display: flex;
+        gap: 1.3rem;
+        padding-left: 5rem;
+        
+    }
+    .fb .proflie img
+    {
+        width: 4.5rem;
+        height: 4.5rem;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-top:  1rem ;
+        
+    
+    }
+    .fb .proflie h4
+    {
+        font-size: 1.4rem;
+        color: purple;
+        
+    }
+    #span
+    {
+        color: rgb(214, 89, 214);
+    }
+    .fb .btun_feed
+    {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding-left: 5rem;
+    }
+    .fb .btun_feed div
+    {
+        font-size: 1.5rem;
+        color: rgb(166, 77, 255);
+        background-color: rgb(66, 62, 62);
+        
+    } 
+
+    .feedback .slide-feedback
+    {
+        display: none;
+    
+    }
+    .feedback .slide-feedback.active
+    {
+        display: block;
+    }
+    </STYle>
+</head>
+<body>
+    <section  class="feedback">
+        <div class="feed">
+            <div class="slide-feedback active">
+                <div class="fb">
+                    <img src="/img/icon/quote-alt-left-solid-60.png"  id="quote"alt="">
+                    
+                    <p>These are the best sneaker that one acquires,
+                        also they are always withthe latest new and trends,
+                         with a very comfortable price and especially with the attention you receive, they are always attentive to your questions
+                    </p>
+
+                    <b class="B">March 27.2021</b>
+
+                    <div class="proflie">
+                        <img src="img/profile/manasvegad.jpeg" alt="">
+                       
+                        <h4>
+                            Manas Vegad <br>
+                            <span id="span">CEO</span>
+                            
+                        </h4>
+                       
+                    </div>
+
+                    <div class="btun_feed">
+                      <div id="prev_feed" class="feed-left" onclick="prev();"><i class='bx bx-left-arrow-alt'></i></div>
+                      <div id="next_feed" class="feed-right" onclick="next();"><i class='bx bx-right-arrow-alt'></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-feedback">
+                <div class="fb">
+                    <img src="/img/icon/quote-alt-left-solid-60.png" id="quote" alt="">
+                    
+                    <p>These are the best sneaker that one acquires,
+                        also they are always withthe latest new and trends,
+                         with a very comfortable price and especially with the attention you receive, they are always attentive to your questions
+                    </p>
+
+                    <b class="B">March 27.2021</b>
+
+                    <div class="proflie">
+                        <img src="img/profile/varunjadav.jpeg" alt="">
+                       
+                        <h4>
+                            varun jadav<br>
+                            <span>CEO</span>
+                            
+                        </h4>
+                       
+                    </div>
+                    <div class="btun_feed">
+                      <div id="prev_feed" class="feed-left" onclick="prev();"><i class='bx bx-left-arrow-alt'></i></div>
+                      <div id="next_feed" class="feed-right" onclick="next();"><i class='bx bx-right-arrow-alt'></i></div>
+                    </div>
+                </div>   
+            </div>
+            <div class="slide-feedback">
+                <div class="fb">
+                    <img src="/img/icon/quote-alt-left-solid-60.png" id="quote" alt="">
+                    
+                    <p>These are the best sneaker that one acquires,
+                        also they are always withthe latest new and trends,
+                         with a very comfortable price and especially with the attention you receive, they are always attentive to your questions
+                    </p>
+
+                    <b class="B">March 27.2021</b>
+
+                    <div class="proflie">
+                        <img src="img/profile/keyurBhai.jpeg" alt="">
+                       
+                        <h4>
+                            keyur BHAI<br>
+                            <span>CEO</span>
+                            
+                        </h4>
+                       
+                    </div>
+                    <div class="btun_feed">
+                      <div id="prev_feed" class="feed-left" onclick="prev();"><i class='bx bx-left-arrow-alt'></i></div>
+                      <div id="next_feed" class="feed-right" onclick="next();"><i class='bx bx-right-arrow-alt'></i></div>
+                    </div>
+                </div>   
+            </div>
+
+
+        </div>
+
+
+        <div class="img">
+            <div class="box">
+                <img src="img/imgs/PUMA CA Pro sneakers in white with light gray detail.jfif" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        
+        let f_slides = document.querySelectorAll('.slide-feedback');
+        let f_index = 0;
+
+function next(){
+    f_slides[f_index].classList.remove('active');
+    f_index = (f_index + 1) % f_slides.length;
+    f_slides[f_index].classList.add('active');
+}
+
+function prev(){
+    f_slides[f_index].classList.remove('active');
+    f_index = (f_index - 1 + f_slides.length) % f_slides.length;
+    f_slides[f_index].classList.add('active');
+}
+    </script>
+</body>
+</html>
